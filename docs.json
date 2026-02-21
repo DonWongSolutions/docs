@@ -9,14 +9,9 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "API Routes",
-        "pages": [
-          "home",
-          "untitled-page"
-        ]
-      }
+    "pages": [
+      "home",
+      "chat-completions"
     ]
   },
   "logo": {
@@ -48,13 +43,6 @@
      "cursor",
      "vscode"
    ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   },
   "description": "Documentation for the Abingdon School Computer Science DECODE"
 }
