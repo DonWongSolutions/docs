@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Abingdon CS DECODE Docs",
   "colors": {
     "primary": "#E64097",
     "light": "#E64097",
     "dark": "#E64097"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -20,15 +20,15 @@
     ]
   },
   "logo": {
-    "light": "https://cdn.hackclub.com/019c320d-c705-7651-ad13-8cb2f9cdc6bc/Abingdon%20CS%20White.png",
-    "dark": "https://cdn.hackclub.com/019c7a2c-4367-7fd2-9d69-fdfaafe9dec6/Abingdon%20CS%20Black.png",
+    "light": "/logos/black.png",
+    "dark": "/logos/white.png",
     "href": "https://abingdoncs.org.uk"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Abingdon CS DECODE",
+        "href": "https://decode.abingdoncs.org.uk"
       }
     ],
     "primary": {
@@ -55,5 +55,6 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
-  }
+  },
+  "description": "Documentation for the Abingdon School Computer Science DECODE"
 }
