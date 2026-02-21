@@ -7,11 +7,9 @@ Creates model responses based on chat history. Supports streaming and non-stream
 Compatible with OpenAI Chat Completions API.
 
 <Tip>
-  ## **Authorization**
+  ## **Authorization (BearerAuth)**
 
-  **BearerAuth**
-
-  **Authorization **`Bearer <token>`
+  > **Authorization** `Bearer <token>`
 
   Authentication is done using Bearer Token. Format:`Authorization: Bearer sk-xxxxxx`
 
@@ -25,7 +23,7 @@ curl -X POST "https://decode.abingdoncs.org.uk/v1/chat/completions" \
   -H "Authorization: Bearer " \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gpt-4",
+    "model": "gpt-4o",
     "messages": [
       {
         "role": "system",
@@ -41,7 +39,7 @@ import requests
 
 url = "https://decode.abingdoncs.org.uk/v1/chat/completions"
 body = """{
-  "model": "gpt-4",
+  "model": "gpt-4o",
   "messages": [
     {
       "role": "system",
