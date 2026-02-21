@@ -1,7 +1,60 @@
-# ChatCompletions Format
+---
+title: "ChatCompletions Format"
+---
 
 Creates model responses based on chat history. Supports streaming and non-streaming responses.
 
 Compatible with OpenAI Chat Completions API.
 
-<APIPage document={"openapi/generated/ai-model/聊天（Chat）/原生OpenAI格式/post-v1-chat-completions-createchatcompletion-383826473.json"} operations={[{"path":"/v1/chat/completions","method":"post"}]} />
+<Tip>
+  ## **Authorization**
+
+  **BearerAuth**
+
+  **Authorization **`Bearer <token>`
+
+  Authentication is done using Bearer Token. Format:`Authorization: Bearer sk-xxxxxx`
+
+  In: `header`
+</Tip>
+
+<RequestExample>
+
+```shellscript cURL
+curl -X POST "https://decode.abingdoncs.org.uk/v1/chat/completions" \
+  -H "Authorization: Bearer " \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "gpt-4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "string"
+      }
+    ]
+  }'
+```
+
+
+```python Python
+import requests
+
+url = "https://decode.abingdoncs.org.uk/v1/chat/completions"
+body = """{
+  "model": "gpt-4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "string"
+    }
+  ]
+}"""
+response = requests.request("POST", url, data = body, headers = {
+  "Content-Type": "application/json", 
+  "Authorization": "Bearer "
+})
+
+print(response.text)
+```
+
+</RequestExample>
