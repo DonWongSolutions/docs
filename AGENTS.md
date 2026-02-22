@@ -15,6 +15,7 @@
 ## Terminology
 
 <!-- Add product-specific terms and preferred usage -->
+
 <!-- Example: Use "workspace" not "project", "member" not "user" -->
 
 ## Style preferences
@@ -30,4 +31,5 @@
 ## Content boundaries
 
 <!-- Define what should and shouldn't be documented -->
+
 <!-- Example: Don't document internal admin features -->

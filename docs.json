@@ -22,27 +22,28 @@
   "navbar": {
     "links": [
       {
-        "label": "Abingdon CS DECODE",
-        "href": "https://decode.abingdoncs.org.uk"
+        "label": "Abingdon School",
+        "href": "https://abingdon.org.uk"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open DECODE",
+      "href": "https://decode.abingdoncs.org.uk"
     }
   },
   "contextual": {
     "options": [
      "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
+     "view"
    ]
+  },
+  "errors": {
+   "404": {
+     "redirect": false,
+     "title": "Page Not Found!",
+     "description": "This page vanished. Let's [return to main()](/) and try again."
+    }
   },
   "description": "Documentation for the Abingdon School Computer Science DECODE"
 }

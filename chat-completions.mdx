@@ -6,13 +6,24 @@ import Authorization from '/snippets/authorization.mdx';
 
 import RequestBody from '/snippets/request-body.mdx';
 
+import ResponseBody from '/snippets/response-body.mdx';
+
 Creates model responses based on chat history. Supports streaming and non-streaming responses.
 
 Compatible with OpenAI Chat Completions API.
 
-<Authorization />
 
-<RequestBody />
+<Tabs>
+  <Tab title="Authorization">
+    <Authorization />
+  </Tab>
+  <Tab title="Request Body" icon="leaf">
+    <RequestBody />
+  </Tab>
+  <Tab title="Response">
+    <ResponseBody />
+  </Tab>
+</Tabs>
 
 <RequestExample>
 
