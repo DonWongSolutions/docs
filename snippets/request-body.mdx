@@ -1,4 +1,89 @@
 ---
-title: 'Request Body'
+title: "Request Body"
 ---
 
+### **Request Body**
+
+<ParamField path="model" type="string" required>
+  The ID of the model to use for the request.
+</ParamField>
+
+<ParamField path="messages" type="array<object>" required>
+  A list of messages comprising the conversation history.
+</ParamField>
+
+<ParamField path="temperature" type="number">
+  Controls randomness; lower values are deterministic, higher are creative. **Default** `1` **Range** `0 <= value <= 2`
+</ParamField>
+
+<ParamField path="top_p" type="number">
+  Nucleus sampling parameter to focus on top probability tokens. **Default** `1` **Range** `0 <= value <= 1`
+</ParamField>
+
+<ParamField path="n" type="integer">
+  Specifies how many chat completion choices to generate. **Default** `1` **Range** `1 <= value`
+</ParamField>
+
+<ParamField path="stream" type="boolean">
+  If true, partial message deltas will be sent as events. **Default** `false`
+</ParamField>
+
+<ParamField path="stream_options" type="object">
+  Options for configuring the behavior of the streaming response.
+</ParamField>
+
+<ParamField path="stop" type="string | array<string>">
+  Up to 4 sequences where the API will stop generating.
+</ParamField>
+
+<ParamField path="max_tokens" type="integer">
+  The maximum number of tokens to generate in the completion.
+</ParamField>
+
+<ParamField path="max_completion_tokens" type="integer">
+  Limits the total tokens generated specifically for the completion.
+</ParamField>
+
+<ParamField path="presence_penalty" type="number">
+  Penalizes tokens based on whether they appeared in text. **Default** `0` **Range** `-2 <= value <= 2`
+</ParamField>
+
+<ParamField path="frequency_penalty" type="number">
+  Penalizes tokens based on their existing frequency in text. **Default** `0` **Range** `-2 <= value <= 2`
+</ParamField>
+
+<ParamField path="logit_bias" type="object">
+  Modifies the likelihood of specified tokens appearing in the completion.
+</ParamField>
+
+<ParamField path="user" type="string">
+  A unique identifier representing your end-user for monitoring.
+</ParamField>
+
+<ParamField path="tools" type="array<object>">
+  A list of tools the model may call (e.g., functions).
+</ParamField>
+
+<ParamField path="tool_choice" type="string | object">
+  Controls which (if any) tool is called by the model.
+</ParamField>
+
+<ParamField path="response_format" type="object">
+  Specifies the format that the model must output (e.g., JSON).
+</ParamField>
+
+<ParamField path="seed" type="integer">
+  Used for deterministic sampling to ensure repeatable outputs.
+</ParamField>
+
+<ParamField path="reasoning_effort" type="string">
+  Sets the computational intensity for models with reasoning capabilities. **Values** `"low" | "medium" | "high"`
+</ParamField>
+
+<ParamField path="modalities" type="array<string>">
+  Specifies the output modalities the model should use (e.g., audio).
+</ParamField>
+
+<ParamField path="audio" type="object">
+  Parameters for the audio output when using audio modalities.
+</ParamField>
