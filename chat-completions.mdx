@@ -2,19 +2,13 @@
 title: "ChatCompletions Format"
 ---
 
+import Authorization from '/snippets/authorization.mdx';
+
 Creates model responses based on chat history. Supports streaming and non-streaming responses.
 
 Compatible with OpenAI Chat Completions API.
 
-<Tip>
-  ## **Authorization (BearerAuth)**
-
-  > **Authorization** `Bearer <token>`
-
-  Authentication is done using Bearer Token. Format:`Authorization: Bearer sk-xxxxxx`
-
-  In: `header`
-</Tip>
+<Authorization />
 
 <RequestExample>
 
@@ -52,7 +46,7 @@ response = requests.request("POST", url, data = body, headers = {
   "Authorization": "Bearer "
 })
 
-print(response.text)
+print(response
 ```
 
 </RequestExample>
